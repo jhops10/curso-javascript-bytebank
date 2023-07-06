@@ -14,13 +14,8 @@ const contaCorrenteC2 = new ContaCorrente(1001, cliente2);
 
 
 
-
 //Ações
-contaCorrenteC1.depositar(100);
-contaCorrenteC1.transferir(25, contaCorrenteC2);
-contaCorrenteC2.transferir(5, contaCorrenteC1);
 
-console.log(ContaCorrente.numeroDeContas);
 
 
 
