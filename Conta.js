@@ -23,8 +23,15 @@ export default class Conta {
 
 
   sacar(valor) {
-    if (this._saldo >= valor) {
-      this._saldo -= valor;
+    let taxa = 1;
+    return this._sacar(valor, taxa);
+  }
+
+  _sacar(valor, taxa) {
+    const valorSacado = taxa * valor;
+    if (this._saldo >= valorSacado) {
+      this._saldo -= valorSacado;
+      return valorSacado;
     } else {
       console.log('Saldo Insuficiente!');
     }

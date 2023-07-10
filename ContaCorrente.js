@@ -9,12 +9,7 @@ export default class ContaCorrente extends Conta {
   }
 
   sacar(valor) {
-    let taxa = 1.1
-    const valorSacado = taxa * valor;
-    if (this._saldo >= valorSacado) {
-      this._saldo -= valorSacado;
-    } else {
-      console.log('Saldo Insuficiente!');
-    }
+    let taxa = 1.1;
+    super._sacar(valor, taxa);
   }
 }
