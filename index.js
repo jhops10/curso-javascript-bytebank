@@ -14,9 +14,9 @@ const contaPoupancaC1 = new ContaPoupanca(0, cliente1, 1001);
 //Ações
 
 contaCorrenteC1.depositar(500);
-contaCorrenteC1.transferir(100, contaPoupancaC1);
+contaCorrenteC1.sacar(100);
+
 console.log(contaCorrenteC1);
-console.log(contaPoupancaC1);
 
 
 
