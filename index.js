@@ -18,7 +18,7 @@ gerente.cadastrarSenha('123');
 
 
 //Ações
-
+console.log(cliente1);
 const estaLogado = SistemaAutenticacao.login(diretor, "123456789");
 
 console.log(estaLogado);
