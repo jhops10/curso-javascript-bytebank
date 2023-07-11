@@ -10,6 +10,6 @@ export default class ContaCorrente extends Conta {
 
   sacar(valor) {
     const taxa = 1.1;
-    super._sacar(valor, taxa);
+    return super._sacar(valor, taxa);
   }
 }

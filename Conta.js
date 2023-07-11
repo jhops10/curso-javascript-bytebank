@@ -30,8 +30,7 @@ export default class Conta {
 
 
   sacar(valor) {
-    let taxa = 1;
-    return this._sacar(valor, taxa);
+    throw new Error('Não é possível utilizar o método "sacar" da classe Conta.');
   }
 
   _sacar(valor, taxa) {
